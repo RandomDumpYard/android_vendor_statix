@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
     PixelLauncher
 endif
 
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Updaters
 ifeq ($(STATIX_BUILD_TYPE),OFFICIAL)
 PRODUCT_PACKAGES += \
