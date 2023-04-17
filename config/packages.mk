@@ -29,8 +29,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     StatixSystemUI
 
 # Google Camera GO
+ifeq ($(INCLUDE_CAMERA_GO),true)
 PRODUCT_PACKAGES += \
     GoogleCameraGo
+endif
 
 # Google Pixel Launcher
 ifeq ($(INCLUDE_PIXEL_LAUNCHER),true)
